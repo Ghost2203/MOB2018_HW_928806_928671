@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MOB2018_HW_928806_928671</string>
+    <string name="title_activity_label">ActivityLabel</string>
 </resources>
