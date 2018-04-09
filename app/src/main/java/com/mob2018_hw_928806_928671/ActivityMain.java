@@ -21,7 +21,7 @@ public class ActivityMain extends Activity {
 
     public void onClickToast(View v) {
         Toast.makeText(getApplicationContext(),
-                "Benjamin Haberkorn (928806), Glen Wider (928671)", Toast.LENGTH_LONG).show();
+                getString(R.string.ToText_Editors), Toast.LENGTH_LONG).show();
         Log.i(TAG1, "Toast Button gedrückt");
     }
 
@@ -29,8 +29,14 @@ public class ActivityMain extends Activity {
         Intent i = new Intent(this, ActivityLabel.class);
         final EditText main2Input = (EditText) findViewById(R.id.main2Input);
         String userMessage = main2Input.getText().toString();
-        i.putExtra("main2Message", userMessage);
-        startActivity(i);
-        Log.i(TAG2, "Intent Button gedrückt. Text: " + userMessage);
+        if (userMessage.equals("")) {
+            Toast.makeText(getApplicationContext(),
+                    "Bitte gebe etwas in das Textfeld ein!", Toast.LENGTH_LONG).show();
+            Log.i(TAG1, "Toast für leeres Textfeld");
+        }else{
+            i.putExtra("main2Message", userMessage);
+            startActivity(i);
+            Log.i(TAG2, "Intent Button gedrückt. Text: " + userMessage);
+        }
     }
 }

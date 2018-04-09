@@ -20,7 +20,7 @@ public class ActivityLabel extends AppCompatActivity {
 
         Bundle main2Data = getIntent().getExtras();
         String main2Message = main2Data.getString("main2Message");
-        final TextView main2Text = (TextView) findViewById(R.id.main2Text);
+        final TextView main2Text = (TextView) findViewById(R.id.textView);
         main2Text.setText(main2Message);
     }
 

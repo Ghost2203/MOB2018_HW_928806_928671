@@ -10,15 +10,15 @@
         android:id="@+id/ButtonToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ButtonToast"
-        android:onClick="onClickToast"/>
+        android:onClick="onClickToast"
+        android:text="@string/BTN_Toast_Text" />
 
     <Button
         android:id="@+id/ButtonIntent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickIntent"
-        android:text="ButtonIntent" />
+        android:text="@string/BTN_Intent_Text" />
 
     <EditText
         android:id="@+id/main2Input"

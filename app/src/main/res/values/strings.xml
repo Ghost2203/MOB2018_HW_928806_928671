@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MOB2018_HW_928806_928671</string>
-    <string name="title_activity_label">ActivityLabel</string>
+    <string name="title_activity_label">Milestone 1</string>
+    <string name="ToText_Editors">Benjamin Haberkorn (928806), Glen Wider (928671)</string>
+    <string name="BTN_Intent_Text">Button für eine neue View</string>
+    <string name="BTN_Toast_Text">Button für einen Toast</string>
 </resources>
